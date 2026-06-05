@@ -164,7 +164,8 @@ max-width: 18ch;
 
 @media (max-width: 720px) {
 .section {
-padding-top: 72px;
+padding-top: 52px;
+border-top: none;
 }
 
 .header {
