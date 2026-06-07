@@ -8,7 +8,7 @@ export default function ResumeBlock() {
           <p className={styles.eyebrow}>Resume</p>
 
           <h2 id="resume-block-title" className={styles.title}>
-            Want the full story?
+            Want the concise version?
           </h2>
 
           <p className={styles.description}>

@@ -13,6 +13,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  font-family: var(--font-inter);
 }
 
 .title {
@@ -48,6 +49,7 @@
 .list {
   display: grid;
   gap: var(--space-3);
+  font-family: var(--font-inter);
 }
 
 .item {

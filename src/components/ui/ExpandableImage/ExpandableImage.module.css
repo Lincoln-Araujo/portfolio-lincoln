@@ -1,0 +1,100 @@
+.trigger {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.imageWrap {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #e9e1d7;
+}
+
+.image {
+  transition: transform var(--transition-default);
+}
+
+.trigger:hover .image {
+  transform: scale(1.01);
+}
+
+.cover {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.contain {
+  object-fit: contain;
+  object-position: center;
+  background: #e9e1d7;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(20, 18, 16, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  position: relative;
+  width: min(1200px, 100%);
+  height: min(86vh, 900px);
+}
+
+.closeButton {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 2rem;
+  line-height: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.modalImageWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: #111;
+}
+
+.modalImage {
+  object-position: center;
+}
+
+@media (max-width: 720px) {
+  .imageWrap {
+    min-height: 240px;
+  }
+
+  .overlay {
+    padding: 16px;
+  }
+
+  .modal {
+    height: min(78vh, 700px);
+  }
+
+  .closeButton {
+    top: -10px;
+    right: -4px;
+  }
+}

@@ -25,7 +25,7 @@ const projects = [
     title: 'Grand Reserva',
     meta: 'UX/UI Design, Prototype',
     description:
-    'A premium digital experience that combines visual storytelling, refined aesthetics, and thoughtful interaction design.',
+    'A self-initiated redesign concept created during COP30 to rethink an outdated scheduling system through clarity, responsiveness, and stronger UX.',
     href: '/work/grand-reserva',
     image: '/images/grandreserva.png',
     alt: 'Preview of Grand Reserva side project',

@@ -27,7 +27,7 @@
   max-width: 18ch;
   font-family: var(--font-cormorant), serif;
   font-size: clamp(3rem, 4.8vw, 6rem);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.08;
   letter-spacing: -0.045em;
 }
@@ -148,6 +148,15 @@
   background-color: #bfbebc;
 }
 
+@media (max-width: 1480px) {
+  .imageWrap {
+    border-top-right-radius: 250px;
+  }
+  .image {
+    object-position: center left;
+  }
+}
+
 @media (max-width: 1180px) {
   .grid {
     grid-template-columns: 1fr;
@@ -172,9 +181,7 @@
 @media (max-width: 720px) {
   .hero {
     padding: 0px var(--page-padding-inline);
-  }
-
-  
+  }  
 
   .media {
     position: relative;
@@ -193,14 +200,6 @@
   .image {
     object-fit: cover;
     object-position: center top;
-  }
-
-  .sideNote {
-    
-  }
-
-  .sideNote::before {
-    
   }
 
   .content {
