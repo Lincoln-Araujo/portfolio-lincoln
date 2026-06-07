@@ -1,5 +1,7 @@
 .section {
-  padding: clamp(72px, 8vw, 112px) var(--page-padding-inline) clamp(96px, 10vw, 144px);
+  padding: clamp(72px, 8vw, 112px) var(--page-padding-inline)
+    clamp(96px, 10vw, 144px);
+  scroll-margin-top: 110px;
 }
 
 .layout {
@@ -9,6 +11,8 @@
   align-items: start;
   border-top: 1px solid var(--color-border);
   padding-top: clamp(28px, 4vw, 40px);
+  padding-inline: 12px;
+  border-radius: 16px;
 }
 
 .content {
@@ -57,6 +61,30 @@
 
 .link:hover {
   border-color: currentColor;
+}
+
+.highlighted {
+  animation: contactHighlight 4.4s ease;
+}
+
+@keyframes contactHighlight {
+  0% {
+    background-color: rgba(166, 121, 82, 0);
+    box-shadow: 0 0 0 0 rgba(166, 121, 82, 0);
+    transform: scale(1);
+  }
+
+  20% {
+    background-color: rgba(166, 121, 82, 0.16);
+    box-shadow: 0 0 0 14px rgba(166, 121, 82, 0.16);
+    transform: scale(1.008);
+  }
+
+  100% {
+    background-color: rgba(166, 121, 82, 0);
+    box-shadow: 0 0 0 0 rgba(166, 121, 82, 0);
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 900px) {

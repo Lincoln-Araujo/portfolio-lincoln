@@ -17,7 +17,11 @@ export default function ResumeBlock() {
           </p>
         </div>
 
-        <a href="#" className={styles.button}>
+        <a
+          href="/resume/lincoln-araujo-cv.pdf"
+          download
+          className={styles.button}
+        >
           Download Resume
         </a>
       </div>

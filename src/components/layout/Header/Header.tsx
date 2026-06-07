@@ -7,8 +7,6 @@ import styles from './Header.module.css';
 const navItems = [
   { href: '/#work', label: 'Work', match: '/' },
   { href: '/about', label: 'About', match: '/about' },
-  { href: '/resume', label: 'Resume', match: '/resume' },
-  { href: '/#contact', label: 'Contact', match: '/contact' },
 ];
 
 export default function Header() {
@@ -41,6 +39,22 @@ export default function Header() {
                 </li>
               );
             })}
+
+            <li>
+              <a
+                href="/resume/lincoln-araujo-cv.pdf"
+                download
+                className={styles.navLink}
+              >
+                Resume
+              </a>
+            </li>
+
+            <li>
+              <Link href="/about#contact" className={styles.navLink}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
