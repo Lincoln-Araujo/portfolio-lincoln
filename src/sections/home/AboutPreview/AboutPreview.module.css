@@ -173,6 +173,7 @@
   .signatureWrap {
     grid-column: auto;
     justify-content: flex-start;
+    max-width: 100%;
   }
 
   .signature {
