@@ -44,12 +44,17 @@ export default function RadioMecContext() {
               <div className={styles.imageWrap}>
                 <Image
                   src="/images/radios-ebc-old.png"
-                  alt="Legacy EBC radio portal"
+                  alt="Previous shared website for Radio MEC and Radio Nacional"
                   fill
                   priority
                   sizes="(max-width: 980px) 100vw, 50vw"
                   className={styles.image}
                 />
+
+                <div className={styles.imageBadge}>
+                  <p className={styles.imageBadgeLabel}>Legacy portal</p>
+                  <p className={styles.imageBadgeText}>Shared website before redesign</p>
+                </div>
               </div>
             </div>
 
