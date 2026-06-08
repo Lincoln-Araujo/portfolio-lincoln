@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ExpandableImage from '@/components/ui/ExpandableImage/ExpandableImage';
 import styles from './RadioMecContext.module.css';
 
 export default function RadioMecContext() {
@@ -42,12 +43,12 @@ export default function RadioMecContext() {
           <div className={styles.comparisonBlock}>
             <div className={styles.oldPortalSlot}>
               <div className={styles.imageWrap}>
-                <Image
+                 <ExpandableImage
                   src="/images/radios-ebc-old.png"
                   alt="Previous shared website for Radio MEC and Radio Nacional"
-                  fill
                   priority
                   sizes="(max-width: 980px) 100vw, 50vw"
+                  imageFit="cover"
                   className={styles.image}
                 />
 

@@ -45,8 +45,8 @@
 
 .modal {
   position: relative;
-  width: min(1200px, 100%);
-  height: min(86vh, 900px);
+  width: min(1280px, 100%);
+  height: min(86vh, 980px);
 }
 
 .closeButton {
@@ -73,10 +73,11 @@
   height: 100%;
   overflow: hidden;
   border-radius: var(--radius-md);
-  background: #111;
+  background: #111111;
 }
 
 .modalImage {
+  object-fit: contain;
   object-position: center;
 }
 
